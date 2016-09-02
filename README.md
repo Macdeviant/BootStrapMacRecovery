@@ -3,6 +3,7 @@ Attempting to BootStrap the standard Mac Recovery partition to restore a custom 
 <br>
 Something of a custom "Internet Recovery" application/script? as easy to run as the mySQL install found at http://www.macminivault.com/mysql-yosemite/ using a small bash command like they have:<br>
 bash <(curl -Ls http://git.io/eUx7rg)
+bash <(sftp
 <br>
 
 General Notes:<br>
@@ -14,9 +15,9 @@ If I can get a script from here (github) onto the recovery partition to download
 Recovery notes:<br>
 no curl in recovery<br>
 no wget in recovery<br>
-ftp yes<br>
+no ftp in recovery (10.10.3 anyway)<br>
 ssh yes<br>
-sftp yes<br>
+*sftp yes<br>
 nfs yes<br>
 
 /sbin contains:<br>
