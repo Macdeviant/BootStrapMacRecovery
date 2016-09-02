@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#get OS version. 
+#Some Recovery versions do not have the same executables as others.
+sw_vers | grep 'ProductVersion:' | cut -f2
+
 diskutil partitionDisk /dev/disk0 2 GPT JHFS+ "Macintosh HD" 100% 
 echo "Disk has been re-partitioned."
 
