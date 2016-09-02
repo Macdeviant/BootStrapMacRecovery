@@ -26,3 +26,10 @@ mount_smbfs < broken due to no supporting libs (SMBClient)<br>
 mount_webdav<br>
 mount_afp<br>
 mount_nfs<br>
+
+
+
+##### NFS seems to be the go.
+mkdir /Volumes/nfs
+mount_nfs 10.x.y.98:/Volumes/Data/nfs /Volumes/nfs
+bash command
